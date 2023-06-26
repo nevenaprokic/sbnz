@@ -1,0 +1,24 @@
+@import "src/style/global";
+
+.background {
+  background-color: $background-color;
+  display: flex;
+  flex-direction: row;
+}
+
+.canvas {
+  margin: 3vh auto;
+}
+
+.buttonSubmit {
+  display: flex;
+  justify-content: flex-end;
+
+  .button {
+    width: 5vw;
+    height: 5vh;
+    margin-top: 5vh;
+    color: $tertiary-color !important;
+    background-color: $secondary-color !important;
+  }
+}

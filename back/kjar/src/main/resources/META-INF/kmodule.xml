@@ -1,0 +1,15 @@
+<kmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://jboss.org/kie/6.0.0/kmodule">
+<!--    I want this first one upitniciKB to be shared between some calls-->
+    <kbase name="upitniciKB" packages="upitnici">
+        <ksession name="upitniciKS"/>
+    </kbase>
+    <kbase name="signaliKB" packages="signali" eventProcessingMode="stream">
+        <ksession name="signaliKS"/>
+    </kbase>
+    <kbase name="signaliStavkaKB" packages="signaliStavka" eventProcessingMode="stream">
+        <ksession name="signaliStavkaKS"/>
+    </kbase>
+    <kbase name="predlogLekovaKB" packages="preporukaLekova">
+        <ksession name="predlogLekovaKS"/>
+    </kbase>
+</kmodule>
